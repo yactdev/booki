@@ -10,4 +10,8 @@ body {
 }
 
 .logo {
+  background-color: black;
+}
+header {
+  display: block;
 }
