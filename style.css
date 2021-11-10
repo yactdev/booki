@@ -1,0 +1,13 @@
+body {
+  width: 768px;
+  font-family: "Raleway";
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
+.logo {
+}
