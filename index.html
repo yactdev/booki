@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
-      crossorigin="anonymous"
-    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo/Booki.png" alt="" />
-        <div class="linked">
-          <ul>
-            <li>
-              <a href="#"><strong>Accomodations</strong></a>
-            </li>
-            <li>
-              <a href="#"><span>Actibities</span></a>
-            </li>
-          </ul>
-        </div>
+    <header class="container">
+      <img src="images/logo/Booki.png" alt="" />
+      <ul>
+        <li>
+          <a href="#"><strong>Accomodations</strong></a>
+        </li>
+        <li>
+          <a href="#"><span>Actibities</span></a>
+        </li>
+      </ul>
+    </header>
 
+    <main class="container">
+      <section class="search">
         <h1>Find a place for your dream vacation</h1>
         <h5>Downtonw or narture</h5>
-      </div>
-      <div class="formu">
         <form action="POST">
-          <span class="material-icons md-14">price_change</span
-          ><input type="text" /><button>Search</button>
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" value="Marselle, France" /><button>Search</button>
         </form>
-    </header>
-    <nav>
-      <span id="navtext">Filter</span>
-      <div class="filter">
-        <span class="material-icons md-14">price_change</span
-        ><a href="#">Low Cost</a>
-      </div>
-      <div class="filter">
-        <span class="material-icons md-14">face</span
-        ><a href="#">Family-friendly</a>
-      </div>
-      <div class="filter">
-        <span class="material-icons md-36">favorite</span
-        ><a href="#">Romantic</a>
-      </div>
-      <div class="filter">
-        <span class="material-icons md-36">pets</span
-        ><a href="#">Pet allowed</a>
-      </div>
-    </nav>
-    <main>
+      </section>
+
+      <section class="filters">
+        <h2>Filter</h2>
+        <div class="filter">
+          <label for="low-cost">
+            <input type="checkbox" id="low-cost" />
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Low Cost</span>
+          </label>
+        </div>
+        <div class="filter">
+          <label for="family">
+            <input type="checkbox" id="family" />
+            <i class="fas fa-child"></i>
+            <span>Family-friendly</span>
+          </label>
+        </div>
+        <div class="filter">
+          <span class="material-icons md-14">face</span
+          ><a href="#">Family-friendly</a>
+        </div>
+        <div class="filter">
+          <span class="material-icons md-36">favorite</span
+          ><a href="#">Romantic</a>
+        </div>
+        <div class="filter">
+          <span class="material-icons md-36">pets</span
+          ><a href="#">Pet allowed</a>
+        </div>
+      </section>
+
       <section class="section1">
-        <div class=accom></div>
+        <div class="accom"></div>
         <div class="activity"></div>
       </section>
     </main>
     <footer>
-      <div class="sitemap">
-        <b>About</b>
-        <ul>
-          <li><a href="#">Site Map</a></li>
-          <li><a href="#">General Term and Conditions</a></li>
-          <li><a href="#">Data and Privacy</a></li>
-        </ul>
-      </div>
-      <div class="sitemap">
-        <strong>Ours Accommodations</strong>
-        <ul>
-          <li><a href="#">Quality Assessment</a></li>
-          <li><a href="#">You Have a Hotel?</a></li>
-        </ul>
-      </div>
-      <div class="sitemap">
-        <strong>Assistance</strong>
-        <ul>
-          <li><a href="#">Help Desk</a></li>
-          <li><a href="#">Contac Us</a></li>
-        </ul>
+      <div class="container">
+        <div>
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">General Term and Conditions</a></li>
+            <li><a href="#">Data and Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ours Accommodations</h3>
+          <ul>
+            <li><a href="#">Quality Assessment</a></li>
+            <li><a href="#">You Have a Hotel?</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Assistance</h3>
+          <ul>
+            <li><a href="#">Help Desk</a></li>
+            <li><a href="#">Contac Us</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
