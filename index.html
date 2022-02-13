@@ -20,7 +20,7 @@
       <img src="images/logo/Booki.png" alt="" />
       <ul>
         <li>
-          <a href="#"><strong>Accomodations</strong></a>
+          <a href="#" class="active"><strong>Accomodations</strong></a>
         </li>
         <li>
           <a href="#"><span>Activities</span></a>
@@ -34,7 +34,11 @@
         <h5>Downtonw or narture</h5>
         <form action="POST">
           <i class="fas fa-map-marker-alt"></i>
-          <input type="text" value="Marselle, France" /><button>Search</button>
+          <input type="text" value="Marselle, France" />
+          <button>
+            <span>Search</span>
+            <i class="fas fa-map-marker-alt"></i>
+          </button>
         </form>
       </section>
 
@@ -71,7 +75,7 @@
       </section>
       <div class="section1">
         <section class="accomm">
-          <h3>Accommodations in Marselle.</h3>
+          <h2>Accommodations in Marselle.</h2>
           <article>
             <img
               src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -178,109 +182,117 @@
         </section>
         <aside class="popular">
           <h3>Most Popular</h3>
-          <article>
-            <img
-              src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-              alt=""
-            />
-            <div id="desc">
-              <b>Auberge la Cannebiere</b>
-              <p>Night starting at 25$</p>
-              <div id="valor">
-                <i class="fas fa-star inactive"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+          <div class="popular">
+            <article>
+              <img
+                src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt=""
+              />
+              <div id="desc">
+                <b>Auberge la Cannebiere</b>
+                <p>Night starting at 25$</p>
+                <div id="valor">
+                  <i class="fas fa-star inactive"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
-            </div>
-          </article>
-          <article>
-            <img
-              src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg"
-              alt=""
-            />
-            <div id="desc">
-              <b>Auberge la Cannebiere</b>
-              <p>Night starting at 25$</p>
-              <div id="valor">
-                <i class="fas fa-star inactive"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+            </article>
+            <article>
+              <img
+                src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt=""
+              />
+              <div id="desc">
+                <b>Auberge la Cannebiere</b>
+                <p>Night starting at 25$</p>
+                <div id="valor">
+                  <i class="fas fa-star inactive"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
-            </div>
-          </article>
-          <article>
-            <img
-              src="images/hebergements/1_xlarge//febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-              alt=""
-            />
-            <div id="desc">
-              <b>Auberge la Cannebiere</b>
-              <p>Night starting at 25$</p>
+            </article>
+            <article>
+              <img
+                src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt=""
+              />
+              <div id="desc">
+                <b>Auberge la Cannebiere</b>
+                <p>Night starting at 25$</p>
 
-              <div id="valor">
-                <i class="fas fa-star inactive"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <div id="valor">
+                  <i class="fas fa-star inactive"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </aside>
       </div>
 
       <!--Activity code-->
-      <h3>Activity in Marseille</h3>
+      <h2>Activity in Marseille</h2>
       <section class="activity">
-        <figure>
-          <img
-            src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-            alt=""
-          />
-          <figcaption>Old Port</figcaption>
-        </figure>
-        <div id="pic">
-          <figure id="twin-pic">
+        <div>
+          <figure>
             <img
-              src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt=""
+              class="big"
             />
-            <figcaption>Pomegues Fort</figcaption>
+            <figcaption>Old Port</figcaption>
           </figure>
-          <figure id="twin-pic">
-            <img
-              src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-              alt=""
-            />
-            <figcaption>Pomegues Fort</figcaption>
-          </figure>
+          <div class="pic">
+            <figure class="twin-pic">
+              <img
+                src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt=""
+              />
+              <figcaption>Pomegues Fort</figcaption>
+            </figure>
+            <figure class="twin-pic">
+              <img
+                src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt=""
+              />
+              <figcaption>Pomegues Fort</figcaption>
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img
-            src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-            alt=""
-          />
-          <figcaption>Friout Island</figcaption>
-        </figure>
-        <div id="pic">
-          <figure id="twin-pic">
+        <div>
+          <figure>
             <img
-              src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               alt=""
+              class="big"
             />
-            <figcaption>Calanques National Park</figcaption>
+            <figcaption>Friout Island</figcaption>
           </figure>
-          <figure id="twin-pic">
-            <img
-              src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-              alt=""
-            />
-            <figcaption>Notre-Dame-de-la-Garde</figcaption>
-          </figure>
+          <div class="pic">
+            <figure class="twin-pic">
+              <img
+                src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt=""
+              />
+              <figcaption>Calanques National Park</figcaption>
+            </figure>
+            <figure class="twin-pic">
+              <img
+                src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt=""
+              />
+              <figcaption>Notre-Dame-de-la-Garde</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
     </main>
