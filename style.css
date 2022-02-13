@@ -105,6 +105,7 @@ header .active::before {
   color: #fff;
   font-size: 17px;
   border-top-right-radius: 10px;
+  border-style: none;
 }
 
 .search button i {
@@ -363,130 +364,8 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  .activity,
-  .filters {
-    display: none;
-  }
-
-  body {
-    font-family: "Raleway", sans-serif;
-    margin: 0px;
-    background: url(./mobile.png) top center no-repeat;
-  }
-
-  .logo {
-    display: flex;
+  * {
     flex-direction: column;
-    justify-content: space-between;
-  }
-  .linked {
-    flex-direction: row;
-    justify-content: right;
-  }
-
-  .linked li {
-    display: inline;
-    padding: 14px 16px;
-    color: black;
-    border-bottom-color: blue;
-    border-bottom-style: solid;
-  }
-  .linked a {
-    color: black;
-    border-width: 0px;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .box img {
-    width: 100%;
-    justify-content: center;
-    border-radius: 10px 10px 0 0;
-  }
-  aside div {
-    margin: 5px;
-    border-radius: 5px;
-    width: 120px;
-    height: 120px;
-    background-color: greenyellow;
-  }
-  .material-icons {
-    background-color: lightblue;
-    border-radius: 20px;
-    color: blue;
-  }
-  /*********************
-  Navigation & header area 
-  **********************/
-
-  nav {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #navtext {
-    display: flex;
-    align-items: center;
-    padding-right: 10px;
-  }
-
-  header h4 {
-    margin: 10px 0px;
-    font-style: bold;
-  }
-  header p {
-    margin: 5px 0px;
-    font-size: 12px;
-  }
-  header {
-    margin: 20px;
-  }
-
-  /*********************
-  search and filter area 
-  **********************/
-  .search button span {
-    display: none;
-  }
-  .search button i {
-    display: block;
-  }
-
-  .filter {
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    margin-right: 10px;
-    border-style: solid;
-    border-left-width: 10px;
-    border-width: 0.25px;
-    border-color: gray;
-  }
-
-  .filter a {
-    color: black;
-    margin: 0px 5px;
-    text-decoration: none;
-  }
-
-  form {
-    display: flex;
-  }
-  .formu {
-    margin: 10px;
-    margin-left: 0px;
-    border-style: none;
-  }
-  .formu span {
-    border-radius: 0 0 20 20;
-  }
-  .formu button {
-    color: white;
-    background-color: blue;
-    border-style: none;
-    border-radius: 0 10px 10px 0;
+    background: url(./desktop.png) top center no-repeat;
   }
 }
