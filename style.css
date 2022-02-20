@@ -9,7 +9,7 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 0px;
-  /*background: url(./desktop.png) top center no-repeat;*/
+  /* background: url(./desktop.png) top center no-repeat; */
 }
 
 a {
@@ -56,10 +56,6 @@ header .active::before {
   background-color: #1470fc;
   width: 100%;
   height: 2px;
-}
-
-/* SEARCH */
-.search {
 }
 
 .search h1 {
@@ -163,6 +159,27 @@ header .active::before {
   background-color: #0065fc;
   color: #deebff;
 }
+.info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.i-info {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  color: #0065fc;
+  border-color: #f2f2f2;
+  border-style: solid;
+  border-radius: 45px;
+  border-width: 3px;
+  font-size: xx-large;
+
+  width: 45px;
+  margin: 20px;
+}
 
 /* SECTION 1 ACCOMODATION AND MOST VIEWWD*/
 .section1 {
@@ -171,7 +188,7 @@ header .active::before {
 
   border-radius: 10px;
   margin-bottom: 64px;
-  margin-top: 88px;
+  margin-top: 20px;
 }
 .section1 b,
 p {
@@ -195,6 +212,9 @@ p {
   box-shadow: 0px 4px 6px rgb(0 0 0 / 20%);
   height: 35%;
 }
+.accomm article:hover {
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 60%);
+}
 
 .accomm img {
   width: 100%;
@@ -214,7 +234,6 @@ p {
   margin: 5px 0px 2px 0px;
 }
 #desc {
-  flex-basis: 100%;
   margin: 0px 0px 0px 5px;
 }
 #valor {
@@ -223,7 +242,7 @@ p {
 }
 #valor i {
   background-color: #f2f2f2;
-  color: blue;
+  color: #0065fc;
   font-size: 8px;
 }
 #inactive {
@@ -260,6 +279,9 @@ p {
   padding: 10px;
   border-radius: 10px;
   background-color: white;
+}
+.popular article:hover {
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 60%);
 }
 #Valor {
   display: flex;
@@ -307,6 +329,10 @@ p {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 20%);
+  height: fit-content;
+}
+.activity figure:hover {
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 60%);
 }
 .activity figure > img {
   width: 100%;
@@ -315,11 +341,16 @@ p {
 }
 
 .activity .big {
-  height: 427px;
+  height: 456px;
 }
 
 .activity figcaption {
-  padding: 6px 12px;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+#twin-pic1 {
+  height: 40%;
 }
 
 /*.activity figure:nth-child(4)>img{
@@ -339,7 +370,7 @@ p {
 
 /*FOOTER*/
 footer {
-  margin-top: 50px;
+  margin-top: 41px;
   padding: 30px;
   font-size: 16px;
 
@@ -366,6 +397,8 @@ footer a {
 @media screen and (max-width: 768px) {
   * {
     flex-direction: column;
-    background: url(./desktop.png) top center no-repeat;
+  }
+  .search button {
+    background-color: #000;
   }
 }

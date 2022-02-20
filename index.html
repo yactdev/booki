@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
-
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css"
+      integrity="sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -20,10 +20,12 @@
       <img src="images/logo/Booki.png" alt="" />
       <ul>
         <li>
-          <a href="#" class="active"><strong>Accomodations</strong></a>
+          <a href="#accommodations" class="active"
+            ><strong>Accomodations</strong></a
+          >
         </li>
         <li>
-          <a href="#"><span>Activities</span></a>
+          <a href="#activities" class="active"> <span>Activities</span></a>
         </li>
       </ul>
     </header>
@@ -73,8 +75,13 @@
           </label>
         </div>
       </section>
+
+      <div class="info">
+        <strong class="i-info">i</strong>
+        <h2>More than 500 accommodations are available in this city</h2>
+      </div>
       <div class="section1">
-        <section class="accomm">
+        <section id="accommodations" class="accomm">
           <h2>Accommodations in Marselle.</h2>
           <article>
             <img
@@ -242,7 +249,7 @@
       <!--Activity code-->
       <h2>Activity in Marseille</h2>
       <section class="activity">
-        <div>
+        <div id="activities">
           <figure>
             <img
               src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -252,14 +259,14 @@
             <figcaption>Old Port</figcaption>
           </figure>
           <div class="pic">
-            <figure class="twin-pic">
+            <figure class="twin-pic1">
               <img
                 src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt=""
               />
               <figcaption>Pomegues Fort</figcaption>
             </figure>
-            <figure class="twin-pic">
+            <figure class="twin-pic2">
               <img
                 src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                 alt=""
