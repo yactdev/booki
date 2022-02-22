@@ -48,14 +48,18 @@ header a {
   position: relative;
 }
 
-header .active::before {
+header a::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #1470fc;
+  background-color: transparent;
   width: 100%;
   height: 2px;
+}
+
+header .active::before {
+  background-color: #1470fc;
 }
 
 /* SEARCH */
@@ -80,7 +84,7 @@ header .active::before {
   margin-bottom: 20px;
 }
 
-.search i {
+.search form > i {
   background-color: #f2f2f2;
   width: 50px;
   line-height: 50px;
@@ -104,6 +108,9 @@ header .active::before {
   font-size: 17px;
   border-top-right-radius: 10px;
   border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search button i {
@@ -113,6 +120,7 @@ header .active::before {
 /* FILTERS */
 .filters {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -124,7 +132,6 @@ header .active::before {
 
 .filters div {
   border: 2px solid #f2f2f2;
-  padding-right: 21px;
   border-radius: 26px;
   margin-right: 20px;
 }
@@ -132,6 +139,10 @@ header .active::before {
 .filters label {
   display: flex;
   align-items: center;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 20px;
+  height: 50px;
 }
 
 .filters i {
@@ -145,11 +156,13 @@ header .active::before {
   margin-right: 10px;
   transform: translateX(-7px);
   font-size: 24px;
+  position: absolute;
+  left: 0;
 }
 
 .filters span {
   font-size: 16px;
-  font-size: large;
+  display: block;
 }
 .filters input {
   width: 0;
@@ -222,6 +235,7 @@ p {
   width: 100%;
   height: 120px;
   border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 .accomm h2 {
   display: flex;
@@ -295,6 +309,7 @@ p {
   border-radius: 10px 0px 0px 10px;
   width: 36%;
   height: 129px;
+  object-fit: cover;
 }
 
 .popular desc {
@@ -308,23 +323,17 @@ p {
   margin-bottom: 0px;
   margin-left: 25px;
 }
-.optional{
+.optional {
   display: flex;
- justify-content: space-between;
- align-content: center;
-
-
+  justify-content: space-between;
+  align-content: center;
 }
 
-.optional i{
+.optional i {
   font-size: 24px;
   align-content: center;
-  margin-top:25px;
+  margin-top: 25px;
   margin-right: 25px;
-
-  
-
-
 }
 
 /* activity code*/
@@ -360,11 +369,14 @@ p {
 .activity figure > img {
   width: 100%;
   height: 181px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .activity .big {
   height: 456px;
+}
+.activity .small {
+  height: 120px;
 }
 
 .activity figcaption {
@@ -382,9 +394,9 @@ p {
 
 #twin-pic3 {
 }
-#twin-pic4 { */
+#twin-pic4 { 
 }
-
+*/
 /*.activity figure:nth-child(4)>img{
   height: 400px;
   object-fit:cover;
@@ -425,9 +437,15 @@ footer a {
   margin-bottom: 7px;
   display: block;
 }
-
+@media screen and (min-width: 992px) {
+}
 @media screen and (max-width: 767px) {
-  * {
+  /* * {
+    flex-direction: column;
+  } */
+
+  header.container {
+    padding: 0;
     flex-direction: column;
   }
 
@@ -436,53 +454,78 @@ footer a {
     display: flex;
     margin: 0;
     padding: 0;
-    flex-direction: row;
+    width: 100%;
   }
+
+  header ul li {
+    width: 50%;
+    text-align: center;
+  }
+
+  header a::before {
+    top: unset;
+    bottom: 0;
+    background-color: #f2f2f2;
+  }
+
   .filters {
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-}
+  }
 
-.filters label {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
+  .filters h2 {
+    width: 100%;
+  }
 
-    .search form {
+  .filters label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
 
-      background-color: #fff;
-      display: flex;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      flex-direction: row;
+  .search form {
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
   }
   .search h5 {
     font-weight: lighter;
+  }
+  .search button {
+    width: 50px;
+  }
 
-}
+  .search button i {
+    display: block;
+  }
+  .search button span {
+    display: none;
+  }
+
   .info {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 0px;
-}
-.info h2{
-  font-size:small;
-font-weight: lighter;
+  }
+  .info h2 {
+    font-size: small;
+    font-weight: lighter;
+  }
+  .i-info {
+    align-items: center;
+    width: 20px;
+    font-size: xx-small;
+  }
 
+  .accomm {
+    order: 2;
+  }
 }
-.i-info{
-  ALIGN-ITEMS: center;
-  width: 20px;
-  font-size: xx-small;
-}
-
-}
-
-
