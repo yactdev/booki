@@ -419,6 +419,9 @@ footer a {
 @media screen and (min-width: 992px) {
 }
 @media screen and (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
   header.container {
     padding: 0;
     flex-direction: column;
@@ -443,41 +446,29 @@ footer a {
     background-color: #f2f2f2;
   }
 
-  .filters {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .filters h2 {
+  .container h2 {
     width: 100%;
+    padding: 0 15px;
   }
 
-  .filters label {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-  .filter:nth-child(0) {
-    order: 0;
-  }
   .filter:nth-child(1) {
     order: 1;
   }
-
   .filter:nth-child(2) {
-    order: 2;
-  }
-  .filter:nth-child(3) {
     order: 3;
+  }
+
+  .filter:nth-child(3) {
+    order: 2;
   }
   .filter:nth-child(4) {
     order: 4;
   }
-  .filter:nth-child(5) {
-    order: -1;
+
+  .filters {
+    padding: 0px 15px;
   }
+
   .search form {
     background-color: #fff;
     display: flex;
@@ -492,6 +483,7 @@ footer a {
   }
   .search button {
     width: 50px;
+    border-radius: 15px;
   }
 
   .search button i {
@@ -499,6 +491,10 @@ footer a {
   }
   .search button span {
     display: none;
+  }
+
+  .search {
+    padding: 0 15px;
   }
 
   .info {
@@ -524,6 +520,10 @@ footer a {
   .accomm {
     flex-direction: column;
     order: 2;
+    padding: 0 15px;
+  }
+  article {
+    margin: 20px 0;
   }
   .activity {
     display: block;
@@ -540,12 +540,16 @@ footer a {
     object-fit: cover;
   }
   .activity figure {
+    margin: 20px 0;
     display: block;
     width: 100%;
   }
 
   .activity .big {
     height: 121px;
+  }
+  .activity {
+    padding: 0 15px;
   }
 }
 footer .container {
