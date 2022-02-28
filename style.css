@@ -419,6 +419,10 @@ footer a {
 @media screen and (min-width: 992px) {
 }
 @media screen and (max-width: 767px) {
+  #valor {
+    align-content: flex-end;
+  }
+
   .container {
     padding: 0;
   }
@@ -448,7 +452,7 @@ footer a {
 
   .container h2 {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .filter:nth-child(1) {
@@ -466,7 +470,7 @@ footer a {
   }
 
   .filters {
-    padding: 0px 15px;
+    padding-left: 20px;
   }
 
   .search form {
@@ -494,7 +498,7 @@ footer a {
   }
 
   .search {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .info {
@@ -505,13 +509,15 @@ footer a {
     margin-bottom: 0px;
   }
   .info h2 {
-    font-size: small;
+    font-size: 16px;
     font-weight: lighter;
+    margin-top: 0;
   }
   .i-info {
     align-items: center;
-    width: 20px;
-    font-size: xx-small;
+    width: 60px;
+    margin-top: 0;
+    margin-right: 0;
   }
   .section1 {
     display: inline;
@@ -520,7 +526,8 @@ footer a {
   .accomm {
     flex-direction: column;
     order: 2;
-    padding: 0 15px;
+    padding: 0 20px;
+    background-color: white;
   }
   article {
     margin: 20px 0;
@@ -554,4 +561,7 @@ footer a {
 }
 footer .container {
   flex-direction: column;
+}
+.popular h3 {
+  margin-left: 20px;
 }
