@@ -47,7 +47,7 @@ header a {
   position: relative;
 }
 
-header a::before {
+/* header a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -55,23 +55,37 @@ header a::before {
   background-color: transparent;
   width: 100%;
   height: 2px;
+} */
+header a:hover {
+  border-top-color: #0065fc;
+  border-top-style: solid;
+  border-width: 2px;
+  color: #0065fc;
 }
 
-header .active::before {
+/* header .active::after {
   background-color: #1470fc;
-}
+} */
 
 /* SEARCH */
 
 .search h1 {
   margin-bottom: 8px;
-  letter-spacing: -0.75px;
+  /* letter-spacing: -0.75px; */
+  font-weight: 600;
+  font-style: bold;
+}
+.search h2 {
+  /* font-size: 16px; */
+
+  font-weight: 600;
 }
 
-.search h5 {
-  font-size: 16px;
+.search h3 {
+  /* font-size: 16px; */
   margin: 0;
   letter-spacing: -0.75px;
+  font-weight: 100;
 }
 
 .search form {
@@ -126,7 +140,6 @@ header .active::before {
 .filters h2 {
   margin-right: 20px;
   letter-spacing: 1px;
-  padding-left: 10px;
 }
 
 .filters div {
@@ -162,6 +175,14 @@ header .active::before {
 .filters span {
   font-size: 16px;
   display: block;
+  font-weight: 600;
+}
+
+.filters > span {
+  font-size: 16px;
+
+  font-weight: 600;
+  margin-right: 20px;
 }
 .filters input {
   width: 0;
@@ -180,6 +201,10 @@ header .active::before {
   margin-top: 20px;
   margin-bottom: 0px;
 }
+
+.info h5 {
+  font-weight: 100;
+}
 .i-info {
   font-family: "Times New Roman", Times, serif;
   display: flex;
@@ -192,7 +217,7 @@ header .active::before {
   font-size: xx-large;
 
   width: 45px;
-  margin: 20px;
+  margin-right: 20px;
 }
 
 /* SECTION 1 ACCOMODATION AND MOST VIEWWD*/
@@ -200,7 +225,7 @@ header .active::before {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  margin-bottom: 64px;
+  margin-bottom: 50px;
   margin-top: 20px;
 }
 .section1 b,
@@ -217,6 +242,9 @@ p {
   background-color: #f2f2f2;
 }
 .accomm article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 2px;
   flex-basis: 28%;
   padding: 5px;
@@ -236,31 +264,39 @@ p {
   object-fit: cover;
 }
 .accomm h2 {
-  display: flex;
+  /* display: flex;
   flex-basis: 100%;
   padding-top: 20px;
   padding-left: 41px;
   letter-spacing: -1px;
-  margin-bottom: 0;
+  margin-bottom: 0; */
+  width: 100%;
+  margin: 0;
+  padding: 45px 0 0 45px;
 }
 
-#desc p {
+/* .accomm .valor {
+  display: flex;
+  background-color: #000;
+  justify-self: flex-end;
+} */
+
+.desc p {
   margin: 5px 0px 2px 0px;
 }
-#desc {
+.desc {
   margin: 0px 0px 0px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#valor {
+
+.valor {
   margin: 0px 0px 5px 5px;
-  align-items: center;
 }
-#valor i {
+.valor i {
   background-color: #f2f2f2;
   color: #0065fc;
-  font-size: 12px;
 }
 .inact {
   color: #f2f2f2;
@@ -284,7 +320,7 @@ p {
   display: flex;
   flex-direction: column;
   flex-basis: 31%;
-  gap: 2px;
+  gap: 20px;
   background-color: #f2f2f2;
   border-radius: 10px;
 }
@@ -300,7 +336,7 @@ p {
 .popular article:hover {
   box-shadow: 0px 4px 6px rgb(0 0 0 / 60%);
 }
-#Valor {
+.valor {
   display: flex;
   align-items: flex-end;
 }
@@ -336,7 +372,7 @@ p {
   margin-right: 25px;
 }
 
-/* activity code*/
+/* Activities section code */
 
 .activity {
   display: flex;
@@ -347,8 +383,6 @@ p {
   flex-basis: 50%;
   display: flex;
   gap: 43px;
-
-  /* justify-content: space-between; */
 }
 
 .activity div div {
@@ -416,10 +450,10 @@ footer a {
   margin-bottom: 7px;
   display: block;
 }
+
+/* VERSION TABLETA */
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .accomm article div:nth-child(3) {
-    margin-top: 100px;
-  }
   .accomm article {
     flex-flow: column;
     max-height: 25%;
@@ -444,11 +478,14 @@ footer a {
   .accomm img {
     height: 60px;
   }
-  #desc {
+  .desc {
     margin: 0px 0px 0px 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+  }
+  .desc strong {
+    font-style: italic;
   }
 
   .popular img {
@@ -459,7 +496,7 @@ footer a {
   }
 }
 @media screen and (max-width: 767px) {
-  #valor {
+  .valor {
     align-content: flex-end;
   }
 
@@ -484,34 +521,47 @@ footer a {
     text-align: center;
   }
 
-  header a::before {
+  /* header a::before {
     top: unset;
     bottom: 0;
     background-color: #f2f2f2;
+  } */
+  header a:hover {
+    border-top-style: unset;
+    border-bottom-color: #0065fc;
+    border-bottom-style: solid;
+    border-width: 2px;
   }
 
   .container h2 {
-    width: 100%;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .filter:nth-child(1) {
     order: 1;
   }
   .filter:nth-child(2) {
-    order: 3;
+    order: 2;
   }
 
   .filter:nth-child(3) {
-    order: 2;
-  }
-  .filter:nth-child(4) {
     order: 4;
   }
-
+  .filter:nth-child(4) {
+    order: 3;
+  }
+  .filter:nth-child(5) {
+    order: 5;
+  }
   .filters {
     padding-left: 20px;
     gap: 5px;
+  }
+  .filters > span {
+    font-size: 16px;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 10px;
   }
 
   .search form {
@@ -550,14 +600,16 @@ footer a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
-  }
-  .info h2 {
-    font-size: 12px;
-    font-weight: lighter;
     margin-top: 0;
+    margin-bottom: 0px;
+    padding-left: 20px;
   }
+  .info h5 {
+    font-weight: 400;
+
+    padding-left: 20px;
+  }
+
   .i-info {
     align-items: center;
     width: 30px;
@@ -624,4 +676,9 @@ footer a {
 }
 .popular h3 {
   margin-left: 20px;
+}
+
+.w3c {
+  display: flex;
+  justify-content: center;
 }
