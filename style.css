@@ -625,7 +625,8 @@ footer a {
     font-size: unset;
   }
   .section1 {
-    display: inline;
+    display: flex;
+    flex-direction: column;
   }
 
   .accomm {
@@ -633,6 +634,10 @@ footer a {
     padding: 0 20px;
     background-color: white;
     gap: 10px;
+    order: 2;
+  }
+  .accomm img {
+    height: 130px;
   }
   article {
     margin: 20px 0;
