@@ -541,7 +541,7 @@ footer a {
   }
 
   .container h2 {
-    padding: 0;
+    padding: 0 20px;
   }
 
   .filter:nth-child(1) {
@@ -628,6 +628,10 @@ footer a {
     display: flex;
     flex-direction: column;
   }
+  .section1 b,
+  p {
+    font-size: 16px;
+  }
 
   .accomm {
     flex-direction: column;
@@ -635,6 +639,10 @@ footer a {
     background-color: white;
     gap: 10px;
     order: 2;
+  }
+  .accomm h2 {
+    padding: 0;
+    margin: 0;
   }
   .accomm img {
     height: 130px;
@@ -666,12 +674,16 @@ footer a {
     height: 130px;
   }
   .activity {
-    padding: 0 15px;
+    padding: 0 20px;
     max-height: none;
   }
 
   .popular {
     border-radius: 0;
+  }
+
+  .valor {
+    font-size: smaller;
   }
   footer .container {
     flex-direction: column;
@@ -680,6 +692,10 @@ footer a {
 
 .popular {
   border-radius: 0;
+  gap: 0;
+}
+.popular article {
+  margin: 10px 20px;
 }
 .popular h3 {
   margin-left: 20px;
