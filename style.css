@@ -338,6 +338,7 @@ p {
 .valor {
   display: flex;
   align-items: flex-end;
+  font-size: 12px;
 }
 
 .popular img {
@@ -490,6 +491,9 @@ footer a {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
+  }
+  .valor {
+    font-size: x-small;
   }
   .desc strong {
     font-style: italic;
@@ -682,9 +686,6 @@ footer a {
     border-radius: 0;
   }
 
-  .valor {
-    font-size: smaller;
-  }
   footer .container {
     flex-direction: column;
   }
