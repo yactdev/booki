@@ -424,9 +424,15 @@ footer a {
 /* VERSION TABLETA */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .filters {
+    gap: 20px;
+  }
   .accomm article {
     flex-flow: column;
     max-height: 25%;
+  }
+  .accomm h2 {
+    padding: 20px 0 0 20px;
   }
   .activity {
     display: flex;
@@ -470,7 +476,7 @@ footer a {
     height: 98px;
   }
   .activity figcaption {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -666,17 +672,6 @@ footer a {
   footer .container {
     flex-direction: column;
   }
-}
-
-.popular {
-  border-radius: 0;
-  gap: 0;
-}
-.popular article {
-  margin: 10px 20px;
-}
-.popular h3 {
-  margin-left: 20px;
 }
 
 .w3c {
